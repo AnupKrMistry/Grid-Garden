@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Froggy</title>
+    <style>
+        header{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            background-image: linear-gradient(90deg, #cccccc00, #bebebe, #8b545400);
+        }
+        img{
+            border-radius: 10px;
+            width: 98%;
+            box-shadow: 0 0 10px #000000;
+            margin: 10px;;
+        }
+        nav{
+            background-color: rgb(141, 255, 217);
+            /* position: sticky;
+            top:0px;
+            z-index: 100; */
+            border-radius: 10px;
+            padding: 5px;
+            overflow-x: scroll;
+            display: flex;
+            box-shadow: 0 0 5px #2e2e2e;
+           
+            
+        }
+        /* nav::-webkit-scrollbar{
+            display: none;
+        } */
+        a{
+            background-color: #ffffff;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            white-space: nowrap;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #3b3b3b;
+            box-shadow: 0 0 5px #2e2e2e;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a:hover{
+            background-color: rgb(255, 217, 0);
+            font-weight: bold;
+        }
+
+        .main{
+            display: flex;
+            overflow: hidden;
+            height: calc(95vh - 60px);
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            width: 200px;
+            padding: 10px;
+        }
+        .section{
+            width: 80vw;
+            overflow-y: scroll;
+        }
+        .nav::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grid Garden </h1>
+    </header>
+    <div class="main">
+    <nav style="flex-grow: 3;" class="nav">
+        <a href="#lv1">Level 1</a>
+        <a href="#lv2">Level 2</a>
+        <a href="#lv3">Level 3</a>
+        <a href="#lv4">Level 4</a>
+        <a href="#lv5">Level 5</a>
+        <a href="#lv6">Level 6</a>
+        <a href="#lv7">Level 7</a>
+        <a href="#lv8">Level 8</a>
+        <a href="#lv9">Level 9</a>
+        <a href="#lv10">Level 10</a>
+        <a href="#lv11">Level 11</a>
+        <a href="#lv12">Level 12</a>
+        <a href="#lv13">Level 13</a>
+        <a href="#lv14">Level 14</a>
+        <a href="#lv15">Level 15</a>
+        <a href="#lv16">Level 16</a>
+        <a href="#lv17">Level 17</a>
+        <a href="#lv18">Level 18</a>
+        <a href="#lv19">Level 19</a>
+        <a href="#lv20">Level 20</a>
+        <a href="#lv21">Level 21</a>
+        <a href="#lv22">Level 22</a>
+        <a href="#lv23">Level 23</a>
+        <a href="#lv24">Level 24</a>
+        <a href="#lv25">Level 25</a>
+        <a href="#lv26">Level 26</a>
+        <a href="#lv27">Level 27</a>
+        <a href="#lv28">Level 28</a>
+        <a href="#win">Win</a>
+    </nav>
+    <section style="flex-grow: 8;" class="section">
+        <img id="lv1" src="img/Level (1).png" alt="Level 1">
+        <img id="lv2" src="img/Level (2).png" alt="Level 2">
+        <img id="lv3" src="img/Level (3).png" alt="Level 3">
+        <img id="lv4" src="img/Level (4).png" alt="Level 4">
+        <img id="lv5" src="img/Level (5).png" alt="Level 5">
+        <img id="lv6" src="img/Level (6).png" alt="Level 6">
+        <img id="lv7" src="img/Level (7).png" alt="Level 7">
+        <img id="lv8" src="img/Level (8).png" alt="Level 8">
+        <img id="lv9" src="img/Level (9).png" alt="Level 9">
+        <img id="lv10" src="img/Level (10).png" alt="Level 10">
+        <img id="lv11" src="img/Level (11).png" alt="Level 11">
+        <img id="lv12" src="img/Level (12).png" alt="Level 12">
+        <img id="lv13" src="img/Level (13).png" alt="Level 13">
+        <img id="lv14" src="img/Level (14).png" alt="Level 14">
+        <img id="lv15" src="img/Level (15).png" alt="Level 15">
+        <img id="lv16" src="img/Level (16).png" alt="Level 16">
+        <img id="lv17" src="img/Level (17).png" alt="Level 17">
+        <img id="lv18" src="img/Level (18).png" alt="Level 18">
+        <img id="lv19" src="img/Level (19).png" alt="Level 19">
+        <img id="lv20" src="img/Level (20).png" alt="Level 20">
+        <img id="lv21" src="img/Level (21).png" alt="Level 21">
+        <img id="lv22" src="img/Level (22).png" alt="Level 22">
+        <img id="lv23" src="img/Level (23).png" alt="Level 23">
+        <img id="lv24" src="img/Level (24).png" alt="Level 24">
+        <img id="lv25" src="img/Level (25).png" alt="Level 25">
+        <img id="lv26" src="img/Level (26).png" alt="Level 26">
+        <img id="lv27" src="img/Level (27).png" alt="Level 27">
+        <img id="lv28" src="img/Level (28).png" alt="Level 28">
+        <img id="win" src="img/final.png" alt="Final">
+    </section>  
+</div>  
+</body>
+</html>
